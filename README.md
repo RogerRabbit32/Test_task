@@ -1,5 +1,4 @@
-# Test_tasks
-Repo for test tasks done within job/internship applications
+# Test_task
 
 В реализации проекта API Registration-Login использована БД PostgreSQL
 

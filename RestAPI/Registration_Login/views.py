@@ -11,7 +11,7 @@ class CreateUser(generics.CreateAPIView):
 
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
-        if not serializer.initial_data['phone'] or \
+        if not serializer.initial_data or not serializer.initial_data['phone'] or \
                 not serializer.initial_data['login'] or \
                 not serializer.initial_data['password'] or \
                 not serializer.initial_data['name'] or \
